@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: labs/lab01.md
+  checksum: 28a51c0a9e3fec5f02ab740c420852827832607dad2e1d7ef81ac5a266675d5d
+version: "1.0"
