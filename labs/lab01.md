@@ -81,6 +81,21 @@ PLEASE CHOOSE WHERE YOU WISH TO SET TALISMAN_HOME VARIABLE AND talisman binary P
 
 You should select the option `1` to add the Talisman path to your `.bashrc` file and make it available for all terminal sessions.
 
+Make sure that the lines added to your `.bashrc` file are similar to the following:
+
+```bash
+# >>> talisman >>>
+# Below environment variables should not be modified unless you know what you are doing
+export TALISMAN_HOME=/home/user/.talisman/bin
+alias talisman=$TALISMAN_HOME/talisman_darwin_arm64
+export TALISMAN_INTERACTIVE=true
+# <<< talisman <<<
+```
+
+Please confirm you have this line: `export TALISMAN_INTERACTIVE=true` in your `.bashrc` file. This line is important to enable the interactive mode of Talisman.
+
+If not, please added it manually.
+
 Then you get a prompt asking if you want to have interactive mode enabled. You should select `Y` to have the interactive mode enabled.
 
 When you get this prompt:
@@ -138,9 +153,22 @@ Now commit these files and check the output of the Talisman scan.
 
 When you have done the commit, Talisman should start an interactive mode to add the files you want to ignore.
 
-Add the `appsettings.json` file to the ignore list and commit the changes.
+You should get a prompt like this:
 
-Now, if you try to commit again all files, you only get talisman errors for the `secret.txt` file.
+```bash
+==== Interactively adding to talismanrc ====
+
+filename: appsettings.json
+checksum: 28a51c0a9e3fec5f02ab740c420852827832607dad2e1d7ef81ac5a266675d5d
+
+? Do you want to add labs/lab01.md with above checksum in talismanrc ?
+```
+
+You should reply `yes` to the `appsettings.json` file and `no` to the other files.
+
+After finishing this process, you should see a new file on your repository named `.talismanrc`.
+
+Please take a look at the content of this file and check if the `appsettings.json` file is there.
 
 ### Step 05: Push your changes to the remote repository
 
