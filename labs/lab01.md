@@ -1,4 +1,4 @@
-# Lab 01 - Prepare your development environment
+# Lab 01 - Enable GitHooks with Talisman
 
 ## Table of Contents
 

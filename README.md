@@ -7,7 +7,6 @@ Navigate to <https://tasb.github.io/secure-devops-training/> to have access to a
 ## Contents
 
 - [Slides](#slides)
-- [Demos](#demos)
 - [Labs](#labs)
 - [Feedback](#feedback)
   
@@ -16,10 +15,12 @@ Navigate to <https://tasb.github.io/secure-devops-training/> to have access to a
 The slides used during the sessions are available on the `slides` folder.
 
 - [Introduction to Secure DevOps](slides/01.SecureDevOps.pdf)
-
-## Demos
+- [Continuous Integration](slides/02.ContinuousIntegration.pdf)
 
 ## Labs
+
+- [Lab 01 - Enable GitHooks with Talisman](labs/lab01.md)
+- [Lab 02 - Enable Secret Scanning](labs/lab02.md)
 
 ## Feedback
 
