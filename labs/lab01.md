@@ -11,6 +11,7 @@
   - [Step 03: Test Talisman on your repository](#step-03-test-talisman-on-your-repository)
   - [Step 04: Configure exceptions for Talisman](#step-04-configure-exceptions-for-talisman)
   - [Step 05: Push your changes to the remote repository](#step-05-push-your-changes-to-the-remote-repository)
+- [Conclusion](#conclusion)
 
 ## Goals
 
@@ -184,4 +185,8 @@ secret.txt
 
 Now, let's commit the changes and push them to the remote repository.
 
+## Conclusion
+
 Congratulations! You have completed the first lab of this course and your local repo is much more secure now!
+
+Now you can proceed to the next lab and learn how to enable secret scanning on your repository.
