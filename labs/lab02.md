@@ -181,11 +181,27 @@ But when you have a lot of commits, you should use a tool like `git filter-branc
 
 Let's check how that tool works.
 
+First, let's get git history of the files you want to remove:
+
+```bash
+git log -p -- gh-token
+```
+
+You should get a list of commits that added the file.
+
 On your local repo, run the following command:
 
 ```bash
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch gh-token azure_sp.json gh-token2 azure_sp2.json' --prune-empty --tag-name-filter cat -- --all
 ```
+
+Now let's confirm that you don't have any history of the files:
+
+```bash
+git log -p -- gh-token
+```
+
+And you should get an empty list.
 
 Now, push the changes to the remote repository:
 
