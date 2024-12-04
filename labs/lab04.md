@@ -95,7 +95,7 @@ jobs:
 
 Let's review some key parts of the workflow file.
 
-First, the triggers for the workflow are defined in the `on` section. 
+First, the triggers for the workflow are defined in the `on` section.
 
 ```yaml
 on:
@@ -109,7 +109,7 @@ on:
 
 The workflow will run on every push to the `main` branch, every pull request to the `main` branch, and every day at 1 AM.
 
-Then, when you defined the languages to be scanned. 
+Then, when you defined the languages to be scanned.
 
 ```yaml
 matrix:

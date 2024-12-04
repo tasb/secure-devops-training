@@ -24,7 +24,7 @@ The slides used during the sessions are available on the `slides` folder.
 - [Lab 02 - Enable Secret Scanning](labs/lab02.md)
 - [Lab 03 - Enable SCA](labs/lab03.md)
 - [Lab 04 - Enable SAST](labs/lab04.md)
-- [Lab 05 - Enable DAST](labs/lab05.md)
+- [Lab 05 - SCA and SAST on pipeline](labs/lab05.md)
 
 ## Feedback
 
