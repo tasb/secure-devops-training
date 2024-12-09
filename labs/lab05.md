@@ -85,7 +85,7 @@ To integrate with Snyk using GitHub Actions, you need to create a new token on S
 
 Navigate to the [Snyk website](https://snyk.io/) and login with your GitHub account.
 
-On the top right corner, click on your profile picture and then on `Account settings`.
+On the bottom left corner, click on your profile name and then on `Account settings`.
 
 On that page you can find your Auth Token.
 
