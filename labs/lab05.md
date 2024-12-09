@@ -173,16 +173,22 @@ jobs:
 
     - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/dotnet@master
-      continue-on-error: true # To make sure that SARIF upload gets called
+      continue-on-error: true
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        args: --sarif-file-output=snyk.sarif --file=TodoAPI.sln
+        args: --sarif-file-output=snyk.sarif --file=TodoApp.sln
         
     - name: Upload result to GitHub Code Scanning
       uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: snyk.sarif
+    
+    - name: Publish security report to artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: snyk-report
+        path: snyk.sarif
     
   security-analysis:
     name: Security Analysis
@@ -287,13 +293,19 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        args: --sarif-file-output=snyk.sarif --file=TodoWebapp.sln
+        args: --sarif-file-output=snyk.sarif --file=TodoApp.sln
         
     - name: Upload result to GitHub Code Scanning
       uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: snyk.sarif
-    
+
+    - name: Publish security report to artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: snyk-report
+        path: snyk.sarif
+
   security-analysis:
     name: Security Analysis
     runs-on: ubuntu-latest
@@ -347,6 +359,8 @@ git push
 ```
 
 You can now create a Pull Request on your repo to test the workflow.
+
+After all checks are done, you can merge the Pull Request.
 
 ## Conclusion
 
