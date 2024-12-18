@@ -28,7 +28,8 @@ The slides used during the sessions are available on the `slides` folder.
 - [Lab 04 - Enable SAST](labs/lab04.md)
 - [Lab 05 - SCA and SAST on pipeline](labs/lab05.md)
 - [Lab 06 - Secure your Infrastructure as Code](labs/lab06.md)
-- [Lab 07 - Cecure your Containers](labs/lab07.md)
+- [Lab 07 - Secure your Containers](labs/lab07.md)
+- [Lab 08 - Run DAST on your application](labs/lab08.md)
 
 ## Feedback
 

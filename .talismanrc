@@ -1,6 +1,8 @@
 fileignoreconfig:
 - filename: .gitignore
   checksum: 918396c3d0fec770830803ea8cae72f341f69246ecbc4fc024f0b48418cbf21d
+- filename: demos/demo05/terraform/.terraform.lock.hcl
+  checksum: 0961238c6712df1493ab13638384314c09a3d04dbe985a7a4a8fb41a26e864f8
 - filename: demos/demo05/terraform/main.tf
   checksum: b6381e43c62e9ffbabfe3bd9f37db4ed8ea75391f4081f179bf3efbef54bfc45
 - filename: labs/lab01.md
@@ -11,4 +13,6 @@ fileignoreconfig:
   checksum: fb7ba409179c0ce63b0799ae4e2b68047674dfa3b02f6ef1730231135913e338
 - filename: labs/lab06.md
   checksum: be4aa5b8af7b69ade8b7d20314ebdd63c5d0e8b9e5a1ee2da867cc8d522aef58
+- filename: labs/lab08.md
+  checksum: 8d19d5af07c19beff6a34d770eb97d5437719cba72e389d1bed339e6a49d7961
 version: "1.0"

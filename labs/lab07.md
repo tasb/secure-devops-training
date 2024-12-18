@@ -144,7 +144,7 @@ Finally, you can commit and push your changes to your repo.
 ```bash
 git add -A
 git commit -m "Add Terraform scripts and update GitHub Actions workflows"
-git push origin add-iac
+git push origin add-trivy
 ```
 
 Navigate to your repo on GitHub and create a new Pull Request to merge your changes to `main` branch.

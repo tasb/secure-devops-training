@@ -12,7 +12,7 @@ checkov -f main.tf
 
 ```bash
 terraform init
-terraform plan -out tf.plan
+terraform plan -out tf.plancd
 terraform show -json tf.plan > tf.json
 checkov -f tf.json
 ```
